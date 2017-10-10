@@ -1,0 +1,80 @@
+#
+# Results on Tuesday October 10 2017 20:25:15 UTC.
+# USER AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
+# Design number was non-random = 52
+#
+# Columns below this comment are as follows:
+# 1. Time results were received.
+# 2. MD5 hash of participant's IP address.
+# 3. Controller name.
+# 4. Item number.
+# 5. Element number.
+# 6. Type.
+# 7. Group.
+# 8. Field name.
+# 9. Field value.
+1507667115,5a5045579c8c8baef0b660518e44be69,Form,5,0,intro,NULL,name,
+1507667115,5a5045579c8c8baef0b660518e44be69,Form,5,0,intro,NULL,_REACTION_TIME_,1399
+1507667115,5a5045579c8c8baef0b660518e44be69,Form,6,0,consent,NULL,name,asd
+1507667115,5a5045579c8c8baef0b660518e44be69,Form,6,0,consent,NULL,consent,yes
+1507667115,5a5045579c8c8baef0b660518e44be69,Form,6,0,consent,NULL,_REACTION_TIME_,2545
+# The lines below this comment are in groups of 2.
+# The formats of the lines in each of these groups are as follows:
+#
+# Line 1:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Sentence (or sentence MD5).
+# Line 2:
+#     Col. 1: Time results were received.
+#     Col. 2: MD5 hash of participant's IP address.
+#     Col. 3: Controller name.
+#     Col. 4: Item number.
+#     Col. 5: Element number.
+#     Col. 6: Type.
+#     Col. 7: Group.
+#     Col. 8: Question (NULL if none).
+#     Col. 9: Answer.
+#     Col. 10: Whether or not answer was correct (NULL if N/A).
+#     Col. 11: Time taken to answer.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,8,0,c1,NULL,Η Ελένη έχασε το πακέτο.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,8,0,c1,NULL,NULL,2,NULL,1298
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,19,0,c5,NULL,Έσκισε την κουρτίνα η Ελίνα.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,19,0,c5,NULL,NULL,3,NULL,230
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,10,0,c2,NULL,Έσπασε ο Νικόλας τη βιτρίνα.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,10,0,c2,NULL,NULL,1,NULL,309
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,16,0,c4,NULL,Η Αλίκη το λουλούδι μύρισε.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,16,0,c4,NULL,NULL,2,NULL,183
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,15,0,c3,NULL,Το βιβλίο διάβασε η Φωτεινή.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,15,0,c3,NULL,NULL,3,NULL,187
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,22,0,c6,NULL,Το χαλάκι ο Μάριος τίναξε.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,22,0,c6,NULL,NULL,3,NULL,104
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,9,0,c1,NULL,Ο Σταμάτης πούλησε τη μηχανή.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,9,0,c1,NULL,NULL,3,NULL,154
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,21,0,c5,NULL,Έσκασε το μπαλόνι η Ειρήνη.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,21,0,c5,NULL,NULL,3,NULL,136
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,12,0,c2,NULL,Τάισε η Μαρίνα το γατάκι
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,12,0,c2,NULL,NULL,3,NULL,107
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,17,0,c4,NULL,Ο Μανώλης τo φαγητό έκαψε.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,17,0,c4,NULL,NULL,3,NULL,125
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,14,0,c3,NULL,Το ποτήρι ράγισε ο Νικήτας.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,14,0,c3,NULL,NULL,1,NULL,128
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,24,0,c6,NULL,Το πάτωμα ο Γρηγόρης σκούπισε.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,24,0,c6,NULL,NULL,1,NULL,136
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,7,0,c1,NULL,Η Μαρία έφαγε το αχλάδι.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,7,0,c1,NULL,NULL,1,NULL,113
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,20,0,c5,NULL,Έφτιαξε το παγωτό η Χριστίνα.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,20,0,c5,NULL,NULL,1,NULL,140
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,11,0,c2,NULL,Κρέμασε η Ελίζα τον πίνακα.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,11,0,c2,NULL,NULL,1,NULL,143
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,18,0,c4,NULL,Ο Ανέστης το καπέλο φόρεσε.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,18,0,c4,NULL,NULL,1,NULL,114
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,13,0,c3,NULL,Τον καναπέ λέρωσε ο Αλέξης.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,13,0,c3,NULL,NULL,2,NULL,143
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,23,0,c6,NULL,Το δεντράκι ο Ηλίας πότισε.
+1507667115,5a5045579c8c8baef0b660518e44be69,AcceptabilityJudgment,23,0,c6,NULL,NULL,1,NULL,72
