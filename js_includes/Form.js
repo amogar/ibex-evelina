@@ -11,7 +11,7 @@ jqueryWidget: {
 
         this.html = dget(this.options, "html");
         this.continueOnReturn = dget(this.options, "continueOnReturn", false);
-        this.continueMessage = dget(this.options, "continueMessage", "Click here to continue");
+        this.continueMessage = dget(this.options, "continueMessage", "Επόμενο");
         this.checkedValue = dget(this.options, "checkedValue", "yes");
         this.uncheckedValue = dget(this.options, "uncheckedValue", "no");
         this.validators = dget(this.options, "validators", { });
@@ -39,7 +39,7 @@ jqueryWidget: {
             var e = $("label." + escape(t.errorCSSClass) + "[for=" + escape(name) + "]");
             if (e.length > 0)
                 e.addClass(t.cssPrefix + "error-text").text(error);
-            else 
+            else
                 alert(error);
         }
 
@@ -84,7 +84,7 @@ jqueryWidget: {
                 var checks = $(dom).find("input[type=checkbox]");
                 for (var i = 0; i < checks.length; ++i) {
                     var check = $(checks[i]);
- 
+
                     // Checkboxes with the 'obligatory' class must be checked.
                     if (! check.attr('checked') && check.hasClass('obligatory')) {
                         alertOrAddError(check.attr('name'), t.obligatoryCheckboxErrorGenerator(check.attr('name')));

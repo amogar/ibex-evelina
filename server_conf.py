@@ -57,7 +57,7 @@ SIMPLE_RESULTS_FILE_COMMENTS = False
 JS_INCLUDES_DIR = "js_includes"
 # The name of the directory where CSS includes are stored.
 # ***** Relative to IBEX_WORKING_DIR unless absolute path. *****
-CSS_INCLUDES_DIR = "css_includes2"
+CSS_INCLUDES_DIR = "css_includes"
 # The name of the directory where data files are stored.
 # ***** Relative to IBEX_WORKING_DIR unless absolute path. *****
 DATA_INCLUDES_DIR = "data_includes"
