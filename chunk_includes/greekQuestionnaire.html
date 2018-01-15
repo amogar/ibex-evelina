@@ -96,7 +96,10 @@
   <td><b>9. Αν απαντήσατε θετικά στην ερώτηση 8, δηλώστε τη γλώσσα και την ηλικία κατά την οποία άρχισε η έκθεση στη γλώσσα (παράδειγμα 1: Στο σπίτι, Αγγλικά, 7 ετών. Παράδειγμα 2: Μετακόμιση σε χώρα που η γλώσσα ομιλείται, Νορβηγικά, 23 ετών)</b></td>
 </tr>
 <tr>
-  <td>Στο σπίτι:</td><td><input name="situation1" type="text" size="30" class="optional" /></td>
+  <td>Στο σπίτι:</td><td><input name="situation1" type="text" size="30" class="obligatory" /></td>
+</tr>
+<tr>
+<td colspan="2"><label class="error" for="situation1"></label></td>
 </tr>
 <tr>
   <td>Στο σχολείο/φροντιστήριο/ιδιαίτερα:</td><td><input name="situation2" type="text" size="30" class="optional" /></td>
@@ -171,7 +174,7 @@
 
 <table class="tw-table" style="padding-top: 3em">
   <tr>
-    <td><b>11. Έχετε λάβει/λαμβάνετε υπηρεσίες λογοθεραπείας;</b></td><td><input name="speechtherapy" type="radio" value="yes" class="optional"/><label >Ναί</label>
+    <td><b>11. Έχετε λάβει/λαμβάνετε υπηρεσίες λογοθεραπείας;</b></td><td><input name="speechtherapy" type="radio" value="yes" class="obligatory"/><label >Ναί</label>
                      <input name="speechtherapy" type="radio" value="no" /><label>όχι</label>
   </tr>
 </table>

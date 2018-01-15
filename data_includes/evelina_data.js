@@ -2,7 +2,7 @@ var theShuffle1 = rshuffle("T1-C1", "T1-C2", "T1-C3", "T1-C4", "T1-C5", "T1-C6",
 var theShuffle2 = rshuffle("T2-C1", "T2-C2", "T2-C3", "T2-C4", "T2-C5", "T2-C6", "T2-filler");
 var theShuffle3 = rshuffle("T3-C1", "T3-C2", "T3-filler");
 
-var shuffleSequence = seq("intro", sepWith("sep", seq(theShuffle1, "break1", theShuffle2, "break2", theShuffle3)));
+var shuffleSequence = seq("practice", "taskBegin", sepWith("sep", seq(theShuffle1, "break1", theShuffle2, "break2", theShuffle3)));
 var practiceItemTypes = ["practice"];
 
 var defaults = [
@@ -69,9 +69,10 @@ var items = [
     ["intro", "Form", {
       html: {include: "greekQuestionnaire.html"}
     }],
-    ["intro", "Message", {html: {include: "preTask.html"}, transfer: "click"}],
-    ["break1", "Message", {html: "To πρώτο μέρος του πειράματος τελείωσε με επιτυχία! Έχεις ερωτήσεις πριν περάσουμε στο δεύτερο μέρος;", transfer:"click"}],
-    ["break2", "Message", {html: "To δεύτερο μέρος του πειράματος τελείωσε με επιτυχία! Έχεις ερωτήσεις πριν περάσουμε στο τρίτο μέρος;", transfer:"click"}],
+    ["intro", "Message", {html: {include: "preTask.html"}, transfer: "keypress"}],
+    ["break1", "Message", {html: "To πρώτο μέρος του πειράματος τελείωσε με επιτυχία! Έχεις ερωτήσεις πριν περάσουμε στο δεύτερο μέρος;", transfer:"keypress"}],
+    ["break2", "Message", {html: "To δεύτερο μέρος του πειράματος τελείωσε με επιτυχία! Έχεις ερωτήσεις πριν περάσουμε στο τρίτο μέρος;", transfer:"keypress"}],
+    ["taskBegin", "Message", {html: "<b>Πολύ ωραία! Τώρα θα ξεκινήσει το πείραμα. Πίεσε το πλήκρο 1 για να το ξεκινήσεις.</b>", transfer:"keypress"}],
 
     // New in Ibex 0.3-beta19. You can now determine the point in the experiment at which the counter
     // for latin square designs will be updated. (Previously, this was always updated upon completion
@@ -82,11 +83,26 @@ var items = [
     //
     //["setcounter", "__SetCounter__", { }],
 
-    // NOTE: You could also use the 'Message' controller for the experiment intro (this provides a simple
-    // consent checkbox).
 
-    //task 1
 
+    //practice items
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 1."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκρο 2."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 3."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 2."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 2."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 3."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 1."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 1."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκρο 2."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 3."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 3."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 1."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκρο 2."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 3."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 1."}],
+
+      //task 1
     ["T1-C1", "AcceptabilityJudgment", {s: "Η Μαρία έφαγε το αχλάδι."}],
     ["T1-C1", "AcceptabilityJudgment", {s: "Η Ελένη έχασε το πακέτο."}],
     ["T1-C1", "AcceptabilityJudgment", {s: "Ο Σταμάτης πούλησε τη μηχανή."}],
