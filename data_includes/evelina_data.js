@@ -2,8 +2,11 @@ var theShuffle1 = rshuffle("T1-C1", "T1-C2", "T1-C3", "T1-C4", "T1-C5", "T1-C6",
 var theShuffle2 = rshuffle("T2-C1", "T2-C2", "T2-C3", "T2-C4", "T2-C5", "T2-C6", "T2-filler");
 var theShuffle3 = rshuffle("T3-C1", "T3-C2", "T3-filler");
 
-var shuffleSequence = seq("intro", "practice", "taskBegin", sepWith("sep", seq(theShuffle1, "break1", theShuffle2, "break2", theShuffle3)));
+var shuffleSequence = seq("practice", "taskBegin", sepWith("sep", seq(theShuffle1, "break1", theShuffle2, "break2", theShuffle3)));
+
 var practiceItemTypes = ["practice"];
+var practiceMessage = "πρακτική";
+var completionMessage = "Tο πείραμα ολοκληρώθηκε με απόλυτη επιτυχία! Ευχαριστούμε για τη συμμετοχή σου! Μπορείς να επικοινωνήσεις μαζί μας οποιαδήποτε στιγμή στο evelina.leivada@uit.no";
 
 var defaults = [
     "Separator", {
@@ -70,8 +73,8 @@ var items = [
       html: {include: "greekQuestionnaire.html"}
     }],
     ["intro", "Message", {html: {include: "preTask.html"}, transfer: "keypress"}],
-    ["break1", "Message", {html: "To πρώτο μέρος του πειράματος τελείωσε με επιτυχία! Έχεις ερωτήσεις πριν περάσουμε στο δεύτερο μέρος;", transfer:"keypress"}],
-    ["break2", "Message", {html: "To δεύτερο μέρος του πειράματος τελείωσε με επιτυχία! Έχεις ερωτήσεις πριν περάσουμε στο τρίτο μέρος;", transfer:"keypress"}],
+    ["break1", "Message", {html: "To πρώτο μέρος του πειράματος τελείωσε με επιτυχία! Πίεσε το πλήκρο 1 για να ξεκινήσεις το δεύτερο μέρος", transfer:"keypress"}],
+    ["break2", "Message", {html: "To δεύτερο μέρος του πειράματος τελείωσε με επιτυχία! Πίεσε το πλήκρο 1 για να ξεκινήσεις το δεύτερο μέρος", transfer:"keypress"}],
     ["taskBegin", "Message", {html: "<b>Πολύ ωραία! Τώρα θα ξεκινήσει το πείραμα. Πίεσε το πλήκρο 1 για να το ξεκινήσεις.</b>", transfer:"keypress"}],
 
     // New in Ibex 0.3-beta19. You can now determine the point in the experiment at which the counter
@@ -89,14 +92,14 @@ var items = [
     ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 1."}],
     ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκρο 2."}],
     ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 3."}],
-    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 2."}],
-    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 2."}],
-    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 3."}],
     ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 1."}],
-    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 1."}],
-    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκρο 2."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 2."}],
     ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 3."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 2."}],
     ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 3."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκρο 1."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 3."}],
+    ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 2."}],
     ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 1."}],
     ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκρο 2."}],
     ["practice", "AcceptabilityJudgment", {s: "Πίεσε το πλήκτρο 3."}],
@@ -109,7 +112,7 @@ var items = [
 
     ["T1-C2", "AcceptabilityJudgment", {s: "Έσπασε ο Νικόλας τη βιτρίνα."}],
     ["T1-C2", "AcceptabilityJudgment", {s: "Κρέμασε η Ελίζα τον πίνακα."}],
-    ["T1-C2", "AcceptabilityJudgment", {s: "Τάισε η Μαρίνα το γατάκι"}],
+    ["T1-C2", "AcceptabilityJudgment", {s: "Τάισε η Μαρίνα το γατάκι."}],
 
     ["T1-C3", "AcceptabilityJudgment", {s: "Τον καναπέ λέρωσε ο Αλέξης."}],
     ["T1-C3", "AcceptabilityJudgment", {s: "Το ποτήρι ράγισε ο Νικήτας."}],
@@ -144,7 +147,7 @@ var items = [
     ["T1-filler", "AcceptabilityJudgment", {s: "Εξαντλήθηκε υπερωρίες στις."}],
     ["T1-filler", "AcceptabilityJudgment", {s: "Γνωρίστηκαν φετινές διακοπές στις."}],
     ["T1-filler", "AcceptabilityJudgment", {s: "Στράφηκε ξαφνικά μου εναντίον."}],
-    ["T1-filler", "AcceptabilityJudgment", {s: "Εμφανίστηκε τηλεόραση στην"}],
+    ["T1-filler", "AcceptabilityJudgment", {s: "Εμφανίστηκε τηλεόραση στην."}],
     ["T1-filler", "AcceptabilityJudgment", {s: "Ενθουσιάζεται μικρό παιδί σαν."}],
     ["T1-filler", "AcceptabilityJudgment", {s: "Καυγάδιζαν τη πάλι όλη μέρα."}],
     ["T1-filler", "AcceptabilityJudgment", {s: "Συγκρούστηκαν με αστυνομία την."}],
@@ -167,7 +170,7 @@ var items = [
     //task 2
 
     ["T2-C1", "AcceptabilityJudgment", {s: "Βρήκα μία μεγάλη γαλλική βεντάλια."}],
-    ["T2-C1", "AcceptabilityJudgment", {s: "Βρήκα ένα μικρό γερμανικό κινητό. "}],
+    ["T2-C1", "AcceptabilityJudgment", {s: "Βρήκα ένα μικρό γερμανικό κινητό."}],
     ["T2-C1", "AcceptabilityJudgment", {s: "Βρήκα ένα λεπτό ελβετικό ρολόι."}],
 
     ["T2-C2", "AcceptabilityJudgment", {s: "Βρήκα ένα ιταλικό μακρύ φόρεμα."}],
@@ -183,7 +186,7 @@ var items = [
     ["T2-C4", "AcceptabilityJudgment", {s: "Είδα ένα κίτρινο στρογγυλό διαμάντι."}],
 
     ["T2-C5", "AcceptabilityJudgment", {s: "Πήρα ένα κομψό μεταλλικό μπαούλο."}],
-    ["T2-C5", "AcceptabilityJudgment", {s: "Πήρα ένα υπέροχη χρυσή καρφίτσα."}],
+    ["T2-C5", "AcceptabilityJudgment", {s: "Πήρα μία υπέροχη χρυσή καρφίτσα."}],
     ["T2-C5", "AcceptabilityJudgment", {s: "Πήρα ένα φρικτό δερμάτινο καπέλο."}],
 
     ["T2-C6", "AcceptabilityJudgment", {s: "Πήρα ένα ξύλινο ωραίο γραφείο."}],
@@ -191,7 +194,7 @@ var items = [
     ["T2-C6", "AcceptabilityJudgment", {s: "Πήρα ένα μάλλινο όμορφο φουστάνι. "}],
 
     ["T2-filler", "AcceptabilityJudgment", {s: "Η Λίνα δουλεύει στο εθνικό μουσείο."}],
-    ["T2-filler", "AcceptabilityJudgment", {s: "To τραγούδι έπαιζε δυνατά στο σπίτι."}],
+    ["T2-filler", "AcceptabilityJudgment", {s: "H τηλεόραση παίζει πολύ δυνατά."}],
     ["T2-filler", "AcceptabilityJudgment", {s: "H Βίκυ είναι η καλύτερή μου φίλη."}],
     ["T2-filler", "AcceptabilityJudgment", {s: "Πούλησα το καινούργιο αυτοκίνητό μου."}],
     ["T2-filler", "AcceptabilityJudgment", {s: "Ξέχασα το τετράδιο στο δωμάτιο."}],
@@ -247,7 +250,7 @@ var items = [
     ["T3-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές πηγαίνουμε στη θάλασσα απ’ότι στο βουνό."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές μαγειρεύω μόνη μου απ’ ότι με τους φίλους."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "Το κλειδί εκείνων των συρταριών βρίσκονται στο μαρμάρινο τραπέζι."}],
-    ["T3-filler", "AcceptabilityJudgment", {s: "Η κόρη της ξαδέρφης της Μαρίνας στέκονται στην αυλή του σχολείου."}],
+    ["T3-filler", "AcceptabilityJudgment", {s: "Η κόρη των δασκάλων της Μαρίνας στέκονται στην αυλή του σχολείου."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "To σκυλάκι των παιδιών των γειτόνων μας παίζουν ήσυχα στον κήπο τους."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "Η φλόγα των κεριών στα τραπεζάκια του μπαρ τρεμόπαιζαν στο σκοτάδι."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "Ο θόρυβος από τα τραγούδια των μαθητών μας δεν σταματούν ποτέ."}],
@@ -261,91 +264,6 @@ var items = [
     ["T3-filler", "AcceptabilityJudgment", {s: "Οι μουσικοί που ο μαέστρος διευθύνει τους ακούει προσεκτικά."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "Οι κολυμβητές που ο προπονητής ανέλαβε πάντα τους ακούει."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "Οι γραμματείς που ο διεθυντής προσέλαβε τους απογοήτευσε."}],
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
