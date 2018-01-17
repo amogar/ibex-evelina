@@ -6,9 +6,9 @@
 
 // Variables common to all experiments.
 var conf_sendingResultsMessage = " Sending results to server...";
-var conf_completionMessage = "Tο πείραμα ολοκληρώθηκε με απόλυτη επιτυχία! Ευχαριστούμε για τη συμμετοχή σου! Μπορείς να επικοινωνήσεις μαζί μας οποιαδήποτε στιγμή στο evelina.leivada@uit.no";
+var conf_completionMessage = "The results were successfully sent to the server. Thanks!";
 var conf_completionErrorMessage = "There was an error sending the results to the server.";
-var conf_pageTitle = "EXPERIMENT";
+var conf_pageTitle = "Experiment";
 var conf_shuffleSequence = seq(equalTo0, rshuffle(lessThan0, greaterThan0));
 var conf_showProgressBar = true;
 var conf_progressBarText = "progress";

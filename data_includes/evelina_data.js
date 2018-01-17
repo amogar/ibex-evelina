@@ -2,7 +2,7 @@ var theShuffle1 = rshuffle("T1-C1", "T1-C2", "T1-C3", "T1-C4", "T1-C5", "T1-C6",
 var theShuffle2 = rshuffle("T2-C1", "T2-C2", "T2-C3", "T2-C4", "T2-C5", "T2-C6", "T2-filler");
 var theShuffle3 = rshuffle("T3-C1", "T3-C2", "T3-filler");
 
-var shuffleSequence = seq("practice", "taskBegin", sepWith("sep", seq(theShuffle1, "break1", theShuffle2, "break2", theShuffle3)));
+var shuffleSequence = seq("intro", "practice", "taskBegin", sepWith("sep", seq(theShuffle1, "break1", theShuffle2, "break2", theShuffle3)));
 
 var practiceItemTypes = ["practice"];
 var practiceMessage = "πρακτική";
