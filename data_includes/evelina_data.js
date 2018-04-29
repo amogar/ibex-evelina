@@ -1,8 +1,11 @@
 var theShuffle1 = rshuffle("T1-C1", "T1-C2", "T1-C3", "T1-C4", "T1-C5", "T1-C6", "T1-filler");
 var theShuffle2 = rshuffle("T2-C1", "T2-C2", "T2-C3", "T2-C4", "T2-C5", "T2-C6", "T2-filler");
 var theShuffle3 = rshuffle("T3-C1", "T3-C2", "T3-filler");
+var theShuffle4 = rshuffle("T4-C1", "T4-C2", "T4-C3", "T4-C4", "T4-C5", "T4-C6", "T4-filler");
+var theShuffle5 = rshuffle("T5-C1", "T5-C2", "T5-C3", "T5-C4", "T5-C5", "T5-C6", "T5-filler");
+var theShuffle6 = rshuffle("T6-C1", "T6-C2", "T6-filler");
 
-var shuffleSequence = seq("intro", "practice", "taskBegin", sepWith("sep", seq(theShuffle1, "break1", theShuffle2, "break2", theShuffle3)));
+var shuffleSequence = seq("intro", "practice", "taskBegin", sepWith("sep", seq(theShuffle1, "break1", theShuffle2, "break2", theShuffle3, "break3", theShuffle4, "break4", theShuffle5, "break5", theShuffle6)));
 
 var practiceItemTypes = ["practice"];
 var practiceMessage = "πρακτική";
@@ -75,6 +78,10 @@ var items = [
     ["intro", "Message", {html: {include: "preTask.html"}, transfer: "keypress"}],
     ["break1", "Message", {html: "To πρώτο μέρος του πειράματος τελείωσε με επιτυχία! Πίεσε το πλήκρο 1 για να ξεκινήσεις το δεύτερο μέρος", transfer:"keypress"}],
     ["break2", "Message", {html: "To δεύτερο μέρος του πειράματος τελείωσε με επιτυχία! Πίεσε το πλήκρο 1 για να ξεκινήσεις το τρίτο μέρος", transfer:"keypress"}],
+    ["break3", "Message", {html: "To δεύτερο μέρος του πειράματος τελείωσε με επιτυχία! Πίεσε το πλήκρο 1 για να ξεκινήσεις το τρίτο μέρος", transfer:"keypress"}],
+    ["break4", "Message", {html: "To δεύτερο μέρος του πειράματος τελείωσε με επιτυχία! Πίεσε το πλήκρο 1 για να ξεκινήσεις το τρίτο μέρος", transfer:"keypress"}],
+    ["break5", "Message", {html: "To δεύτερο μέρος του πειράματος τελείωσε με επιτυχία! Πίεσε το πλήκρο 1 για να ξεκινήσεις το τρίτο μέρος", transfer:"keypress"}],
+
     ["taskBegin", "Message", {html: "<b>Πολύ ωραία! Τώρα θα ξεκινήσει το πείραμα. Πίεσε το πλήκρο 1 για να το ξεκινήσεις.</b>", transfer:"keypress"}],
 
     // New in Ibex 0.3-beta19. You can now determine the point in the experiment at which the counter
@@ -264,4 +271,164 @@ var items = [
     ["T3-filler", "AcceptabilityJudgment", {s: "Οι μουσικοί που ο μαέστρος διευθύνει τους ακούει προσεκτικά."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "Οι κολυμβητές που ο προπονητής ανέλαβε πάντα τους ακούει."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "Οι γραμματείς που ο διευθυντής προσέλαβε τους απογοήτευσε."}],
+    
+    //task 4
+    ["T4-C1", "AcceptabilityJudgment", {s: "Η Μαρία έφαγε το αχλάδι."}],
+    ["T4-C1", "AcceptabilityJudgment", {s: "Η Ελένη έχασε το πακέτο."}],
+    ["T4-C1", "AcceptabilityJudgment", {s: "Ο Σταμάτης πούλησε τη μηχανή."}],
+
+    ["T4-C2", "AcceptabilityJudgment", {s: "Έσπασε ο Νικόλας τη βιτρίνα."}],
+    ["T4-C2", "AcceptabilityJudgment", {s: "Κρέμασε η Ελίζα τον πίνακα."}],
+    ["T4-C2", "AcceptabilityJudgment", {s: "Τάισε η Μαρίνα το γατάκι."}],
+
+    ["T4-C3", "AcceptabilityJudgment", {s: "Τον καναπέ λέρωσε ο Αλέξης."}],
+    ["T4-C3", "AcceptabilityJudgment", {s: "Το ποτήρι ράγισε ο Νικήτας."}],
+    ["T4-C3", "AcceptabilityJudgment", {s: "Το βιβλίο διάβασε η Φωτεινή."}],
+
+    ["T4-C4", "AcceptabilityJudgment", {s: "Η Αλίκη το λουλούδι μύρισε."}],
+    ["T4-C4", "AcceptabilityJudgment", {s: "Ο Μανώλης τo φαγητό έκαψε."}],
+    ["T4-C4", "AcceptabilityJudgment", {s: "Ο Ανέστης το καπέλο φόρεσε."}],
+    
+    ["T4-C5", "AcceptabilityJudgment", {s: "Έσκισε την κουρτίνα η Ελίνα."}],
+    ["T4-C5", "AcceptabilityJudgment", {s: "Έφτιαξε το παγωτό η Χριστίνα."}],
+    ["T4-C5", "AcceptabilityJudgment", {s: "Έσκασε το μπαλόνι η Ειρήνη."}],
+
+    ["T4-C6", "AcceptabilityJudgment", {s: "Το χαλάκι ο Μάριος τίναξε."}],
+    ["T4-C6", "AcceptabilityJudgment", {s: "Το δεντράκι ο Ηλίας πότισε."}],
+    ["T4-C6", "AcceptabilityJudgment", {s: "Το πάτωμα ο Γρηγόρης σκούπισε."}],
+
+    ["T4-filler", "AcceptabilityJudgment", {s: "Πήγα στο σπίτι μετά τις τέσσερις."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Έχω πάει στο Παρίσι τρεις φορές."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Χάθηκε στον δρόμο για το σπίτι της."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Περπάτησα αργά προς τη θάλασσα."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Κοιμηθήκαμε για δώδεκα ώρες."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Βρεθήκαμε στην πόρτα του μουσείου."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Κολυμπήσαμε αργά προς την ακτή."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Φέτος πήγα σε δύο συναυλίες."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Χορέψαμε στον ρυθμό της μουσικής."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Γυμναστήριο στο δεν πήγα εχθές."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Ξεκουράστηκα όμορφο νησί στο."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Φωτογραφήθηκαν παραλία στην."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Αποκοιμήθηκε γκρι καναπέ στον."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Απολύθηκε δεύτερη μέρα τη."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Εξαντλήθηκε υπερωρίες στις."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Γνωρίστηκαν φετινές διακοπές στις."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Στράφηκε ξαφνικά μου εναντίον."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Εμφανίστηκε τηλεόραση στην."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Ενθουσιάζεται μικρό παιδί σαν."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Καυγάδιζαν τη πάλι όλη μέρα."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Συγκρούστηκαν με αστυνομία την."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Χόρεψαν εκδήλωση στην του δήμου."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Στη παντρεύτηκαν εκκλησία μικρή."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Στη γράφτηκα ομάδα θεατρική."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Στην μαγείρεψαν καινούργια κουζίνα."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Τις εκνευρίστηκε νέες φήμες με."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Δούλεψα Κίνα για στην δύο χρόνια."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Τις επισκέφτηκα όλες ηπείρους."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Κατασκήνωσαν στη κοντά λιμνούλα."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Στη προσγειώθηκαν Βενεζουέλα."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Tρόμαξα δυνατές με τις κραυγές της."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Κλειδώθηκαν από έξω το σπίτι."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Γύρισε διακοπές τις από προχθές."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Κατέφθασε με φορτωμένος δώρα."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Ετοιμάστηκε είκοσι σε λεπτά."}],
+    ["T4-filler", "AcceptabilityJudgment", {s: "Κατέβηκα κέντρο στο με τα πόδια."}]
+    
+    //task 5
+    
+    ["T5-C1", "AcceptabilityJudgment", {s: "Βρήκα μία μεγάλη γαλλική βεντάλια."}],
+    ["T5-C1", "AcceptabilityJudgment", {s: "Βρήκα ένα μικρό γερμανικό κινητό."}],
+    ["T5-C1", "AcceptabilityJudgment", {s: "Βρήκα ένα λεπτό ελβετικό ρολόι."}],
+
+    ["T5-C2", "AcceptabilityJudgment", {s: "Βρήκα ένα ιταλικό μακρύ φόρεμα."}],
+    ["T5-C2", "AcceptabilityJudgment", {s: "Βρήκα ένα κινέζικο χοντρό πάπλωμα."}],
+    ["T5-C2", "AcceptabilityJudgment", {s: "Βρήκα ένα σουηδικό φαρδύ κρεβάτι. "}],
+
+    ["T5-C3", "AcceptabilityJudgment", {s: "Είδα ένα τετράγωνο μαύρο τραπέζι."}],
+    ["T5-C3", "AcceptabilityJudgment", {s: "Είδα μία μακρόστενη γκρίζα κουβέρτα."}],
+    ["T5-C3", "AcceptabilityJudgment", {s: "Είδα έναν οβάλ ασπρόμαυρο καναπέ."}],
+
+    ["T5-C4", "AcceptabilityJudgment", {s: "Είδα ένα καφέ τριγωνικό μαντίλι."}],
+    ["T5-C4", "AcceptabilityJudgment", {s: "Είδα έναν άσπρο κυλινδρικό σωλήνα."}],
+    ["T5-C4", "AcceptabilityJudgment", {s: "Είδα ένα κίτρινο στρογγυλό διαμάντι."}],
+
+    ["T5-C5", "AcceptabilityJudgment", {s: "Πήρα ένα κομψό μεταλλικό μπαούλο."}],
+    ["T5-C5", "AcceptabilityJudgment", {s: "Πήρα μία υπέροχη χρυσή καρφίτσα."}],
+    ["T5-C5", "AcceptabilityJudgment", {s: "Πήρα ένα φρικτό δερμάτινο καπέλο."}],
+    
+    ["T5-C6", "AcceptabilityJudgment", {s: "Πήρα ένα ξύλινο ωραίο γραφείο."}],
+    ["T5-C6", "AcceptabilityJudgment", {s: "Πήρα ένα βαμβακερό απλό σεντόνι."}],
+    ["T5-C6", "AcceptabilityJudgment", {s: "Πήρα ένα μάλλινο όμορφο φουστάνι. "}],
+
+    ["T5-filler", "AcceptabilityJudgment", {s: "Η Λίνα δουλεύει στο εθνικό μουσείο."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "H τηλεόραση παίζει πολύ δυνατά."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "H Βίκυ είναι η καλύτερή μου φίλη."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Πούλησα το καινούργιο αυτοκίνητό μου."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Ξέχασα το τετράδιο στο δωμάτιο."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Είπα ένα ποίημα στη σχολική γιορτή."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Γύρισε από το ταξίδι κουρασμένος."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Το κορίτσι φοβήθηκε από τις βροντές."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Ο Αλέξης περιποιήθηκε τον κήπο."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Αγοράσαμε όμορφο σπιτάκι ένα."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Φάγαμε ένα ωραίο ταβερνάκι σε."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Eίδα το προχθές μικρό παιδί του Αντώνη."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Αλεξάνδρα βρήκε καινούργια δουλειά η."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Το άρθρο δημοσιεύτηκε Σάββατο το."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Το αγοράκι έφαγε τα όλα γλυκά."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Το στο τραγούδι ακούστηκε ραδιόφωνο."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Γείτονες οι αγόρασαν καινούργιο σπίτι."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Μαρίνα μάζεψε η κόκκινα λουλούδια."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Στην ο Νικόλας ταξίδεψε Αμερική."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Βρήκα στην ένα μικρό σκυλάκι αυλή μoυ."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "H τα Ειρήνη έβαψε μαλλιά της ξανθά."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Χτες βράδυ πήγαμε κινηματογράφο στον."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Πήρα μεταχειρισμένο αμάξι ένα."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Είδα τέσσερα στον τριαντάφυλλα κήπο."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Έβαψα την πόρτα της αυλής πράσινη μας."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Έφαγα ένα κόκκινο το μήλο πρωί."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Έλυσα ασκήσεις με πολλή προσοχή τις."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Πήγα για ποτό αγαπημένο στο μου μπαρ."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Προχθές με επισκέφτηκαν ξαδέρφια τα μου."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Οι μαθητές έγραψαν χθες διαγώνισμα μας."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Ηλίας ο κολυμπάει κάθε βδομάδα."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Μίνα τρώει σοκολάτα η κάθε μέρα."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Tα παιδιά παίζουν χαρούμενα σαλόνι στο."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Το μωρό παίζει ήσυχα κούκλα με την του."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "To γραφείο είναι μου γεμάτο βιβλία."}],
+    ["T5-filler", "AcceptabilityJudgment", {s: "Βαγγέλης ο γύρισε σπίτι κουρασμένος."}],
+
+    //task 6
+
+    ["T6-C1", "AcceptabilityJudgment", {s: "Περισσότεροι άνθρωποι έχουν πάει στο Λονδίνο απ’ ό,τι εγώ."}],
+    ["T6-C1", "AcceptabilityJudgment", {s: "Περισσότεροι άνθρωποι έχουν πάει στο Μιλάνο απ’ ό,τι εσύ."}],
+    ["T6-C1", "AcceptabilityJudgment", {s: "Περισσότερα αγόρια έχουν πάει στο Παρίσι απ’ ό,τι αυτός."}],
+    ["T6-C1", "AcceptabilityJudgment", {s: "Περισσότερα κορίτσια έχουν πάει στη Στοκχόλμη απ’ ό,τι αυτός."}],
+    ["T6-C1", "AcceptabilityJudgment", {s: "Λιγότεροι άνθρωποι έχουν πάει στο Βερολίνο απ’ ό,τι εγώ."}],
+
+    ["T6-C2", "AcceptabilityJudgment", {s: "Περισσότερα παιδιά έχουν τελειώσει το λύκειο απ’ ό,τι εγώ."}],
+    ["T6-C2", "AcceptabilityJudgment", {s: "Περισσότερα παιδιά έχουν τελειώσει το σχολείο απ’ ό,τι εσύ."}],
+    ["T6-C2", "AcceptabilityJudgment", {s: "Περισσότεροι άντρες έχουν τελειώσει το σχολείο απ’ ό,τι αυτός."}],
+    ["T6-C2", "AcceptabilityJudgment", {s: "Περισσότεροι άντρες έχουν τελειώσει το λύκειο απ’ ό,τι αυτή."}],
+    ["T6-C2", "AcceptabilityJudgment", {s: "Λιγότεροι άνθρωποι έχουν τελειώσει το λύκειο απ’ ό,τι εγώ."}],
+
+    ["T6-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές πήγα στην Αγγλία απ’ ό,τι στη Γερμανία."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές τρώω στο γραφείο μου απ’ ό,τι στο σπίτι μου."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές πηγαίνω στο σινεμά απ’ ό,τι στο θέατρο."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές πηγαίνουμε στη θάλασσα απ’ό,τι στο βουνό."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές μαγειρεύω μόνη μου απ’ ό,τι με τους φίλους."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Το κλειδί εκείνων των συρταριών βρίσκονται στο μαρμάρινο τραπέζι."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Η κόρη των δασκάλων της Μαρίνας στέκονται στην αυλή του σχολείου."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "To σκυλάκι των παιδιών των γειτόνων μας παίζουν ήσυχα στον κήπο τους."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Η φλόγα των κεριών στα τραπεζάκια του μπαρ τρεμόπαιζαν στο σκοτάδι."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Ο θόρυβος από τα τραγούδια των μαθητών μας δεν σταματούν ποτέ."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Τα βιβλία της κόρης του Κωνσταντίνου βρίσκεται στην βιβλιοθήκη."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "H βαλίτσα των διάσημων τραγουδιστών ξεχάστηκαν μέσα στο ταξί."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Η θήκη εκείνων των φακών επαφής βρίσκονται στο πάνω συρτάρι."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Οι ηθοποιοί που ο σκηνοθέτης οδηγεί τους ακούει σιωπηλά."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Οι ποδηλάτες που ο οδηγός βλέπει κάθε Δευτέρα τους χαιρετά."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Οι μαθητές που ο δάσκαλος απέβαλλε τους έκανε παράπονο."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Οι ασθενείς που ο γιατρός κούραρε τους ευχαρίστησε πολύ θερμά."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Οι μουσικοί που ο μαέστρος διευθύνει τους ακούει προσεκτικά."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Οι κολυμβητές που ο προπονητής ανέλαβε πάντα τους ακούει."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Οι γραμματείς που ο διευθυντής προσέλαβε τους απογοήτευσε."}],
 ];
