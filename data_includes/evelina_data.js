@@ -74,7 +74,7 @@ var items = [
     }],
     ["intro", "Message", {html: {include: "preTask.html"}, transfer: "keypress"}],
     ["break1", "Message", {html: "To πρώτο μέρος του πειράματος τελείωσε με επιτυχία! Πίεσε το πλήκρο 1 για να ξεκινήσεις το δεύτερο μέρος", transfer:"keypress"}],
-    ["break2", "Message", {html: "To δεύτερο μέρος του πειράματος τελείωσε με επιτυχία! Πίεσε το πλήκρο 1 για να ξεκινήσεις το δεύτερο μέρος", transfer:"keypress"}],
+    ["break2", "Message", {html: "To δεύτερο μέρος του πειράματος τελείωσε με επιτυχία! Πίεσε το πλήκρο 1 για να ξεκινήσεις το τρίτο μέρος", transfer:"keypress"}],
     ["taskBegin", "Message", {html: "<b>Πολύ ωραία! Τώρα θα ξεκινήσει το πείραμα. Πίεσε το πλήκρο 1 για να το ξεκινήσεις.</b>", transfer:"keypress"}],
 
     // New in Ibex 0.3-beta19. You can now determine the point in the experiment at which the counter
@@ -152,11 +152,11 @@ var items = [
     ["T1-filler", "AcceptabilityJudgment", {s: "Καυγάδιζαν τη πάλι όλη μέρα."}],
     ["T1-filler", "AcceptabilityJudgment", {s: "Συγκρούστηκαν με αστυνομία την."}],
     ["T1-filler", "AcceptabilityJudgment", {s: "Χόρεψαν εκδήλωση στην του δήμου."}],
-    ["T1-filler", "AcceptabilityJudgment", {s: "Στην παντρεύτηκαν εκκλησία μικρή."}],
+    ["T1-filler", "AcceptabilityJudgment", {s: "Στη παντρεύτηκαν εκκλησία μικρή."}],
     ["T1-filler", "AcceptabilityJudgment", {s: "Στη γράφτηκα ομάδα θεατρική."}],
     ["T1-filler", "AcceptabilityJudgment", {s: "Στην μαγείρεψαν καινούργια κουζίνα."}],
     ["T1-filler", "AcceptabilityJudgment", {s: "Τις εκνευρίστηκε νέες φήμες με."}],
-    ["T1-filler", "AcceptabilityJudgment", {s: "Δούλεψα Κίνα για στη δύο χρόνια."}],
+    ["T1-filler", "AcceptabilityJudgment", {s: "Δούλεψα Κίνα για στην δύο χρόνια."}],
     ["T1-filler", "AcceptabilityJudgment", {s: "Τις επισκέφτηκα όλες ηπείρους."}],
     ["T1-filler", "AcceptabilityJudgment", {s: "Κατασκήνωσαν στη κοντά λιμνούλα."}],
     ["T1-filler", "AcceptabilityJudgment", {s: "Στη προσγειώθηκαν Βενεζουέλα."}],
@@ -232,23 +232,23 @@ var items = [
 
     //task 3
 
-    ["T3-C1", "AcceptabilityJudgment", {s: "Περισσότεροι άνθρωποι έχουν πάει στο Λονδίνο απ’ ότι εγώ."}],
-    ["T3-C1", "AcceptabilityJudgment", {s: "Περισσότεροι άνθρωποι έχουν πάει στο Μιλάνο απ’ ότι εσύ."}],
-    ["T3-C1", "AcceptabilityJudgment", {s: "Περισσότερα αγόρια έχουν πάει στο Παρίσι απ’ ότι αυτός."}],
-    ["T3-C1", "AcceptabilityJudgment", {s: "Περισσότερα κορίτσια έχουν πάει στη Στοκχόλμη απ’ ότι αυτός."}],
-    ["T3-C1", "AcceptabilityJudgment", {s: "Λιγότεροι άνθρωποι έχουν πάει στο Βερολίνο απ’ ότι εγώ."}],
+    ["T3-C1", "AcceptabilityJudgment", {s: "Περισσότεροι άνθρωποι έχουν πάει στο Λονδίνο απ’ ό,τι εγώ."}],
+    ["T3-C1", "AcceptabilityJudgment", {s: "Περισσότεροι άνθρωποι έχουν πάει στο Μιλάνο απ’ ό,τι εσύ."}],
+    ["T3-C1", "AcceptabilityJudgment", {s: "Περισσότερα αγόρια έχουν πάει στο Παρίσι απ’ ό,τι αυτός."}],
+    ["T3-C1", "AcceptabilityJudgment", {s: "Περισσότερα κορίτσια έχουν πάει στη Στοκχόλμη απ’ ό,τι αυτός."}],
+    ["T3-C1", "AcceptabilityJudgment", {s: "Λιγότεροι άνθρωποι έχουν πάει στο Βερολίνο απ’ ό,τι εγώ."}],
 
-    ["T3-C2", "AcceptabilityJudgment", {s: "Περισσότερα παιδιά έχουν τελειώσει το λύκειο απ’ ότι εγώ."}],
-    ["T3-C2", "AcceptabilityJudgment", {s: "Περισσότερα παιδιά έχουν τελειώσει το σχολείο απ’ ότι εσύ."}],
-    ["T3-C2", "AcceptabilityJudgment", {s: "Περισσότεροι άντρες έχουν τελειώσει το σχολείο απ’ ότι αυτός."}],
-    ["T3-C2", "AcceptabilityJudgment", {s: "Περισσότεροι άντρες έχουν τελειώσει το λύκειο απ’ ότι αυτή."}],
-    ["T3-C2", "AcceptabilityJudgment", {s: "Λιγότεροι άνθρωποι έχουν τελειώσει το λύκειο απ’ ότι εγώ."}],
+    ["T3-C2", "AcceptabilityJudgment", {s: "Περισσότερα παιδιά έχουν τελειώσει το λύκειο απ’ ό,τι εγώ."}],
+    ["T3-C2", "AcceptabilityJudgment", {s: "Περισσότερα παιδιά έχουν τελειώσει το σχολείο απ’ ό,τι εσύ."}],
+    ["T3-C2", "AcceptabilityJudgment", {s: "Περισσότεροι άντρες έχουν τελειώσει το σχολείο απ’ ό,τι αυτός."}],
+    ["T3-C2", "AcceptabilityJudgment", {s: "Περισσότεροι άντρες έχουν τελειώσει το λύκειο απ’ ό,τι αυτή."}],
+    ["T3-C2", "AcceptabilityJudgment", {s: "Λιγότεροι άνθρωποι έχουν τελειώσει το λύκειο απ’ ό,τι εγώ."}],
 
-    ["T3-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές πήγα στην Αγγλία απ’ ότι στη Γερμανία."}],
-    ["T3-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές τρώω στο γραφείο μου απ’ ότι στο σπίτι μου."}],
-    ["T3-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές πηγαίνω στο σινεμά απ’ ότι στο θέατρο."}],
-    ["T3-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές πηγαίνουμε στη θάλασσα απ’ότι στο βουνό."}],
-    ["T3-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές μαγειρεύω μόνη μου απ’ ότι με τους φίλους."}],
+    ["T3-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές πήγα στην Αγγλία απ’ ό,τι στη Γερμανία."}],
+    ["T3-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές τρώω στο γραφείο μου απ’ ό,τι στο σπίτι μου."}],
+    ["T3-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές πηγαίνω στο σινεμά απ’ ό,τι στο θέατρο."}],
+    ["T3-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές πηγαίνουμε στη θάλασσα απ’ό,τι στο βουνό."}],
+    ["T3-filler", "AcceptabilityJudgment", {s: "Περισσότερες φορές μαγειρεύω μόνη μου απ’ ό,τι με τους φίλους."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "Το κλειδί εκείνων των συρταριών βρίσκονται στο μαρμάρινο τραπέζι."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "Η κόρη των δασκάλων της Μαρίνας στέκονται στην αυλή του σχολείου."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "To σκυλάκι των παιδιών των γειτόνων μας παίζουν ήσυχα στον κήπο τους."}],
@@ -263,9 +263,5 @@ var items = [
     ["T3-filler", "AcceptabilityJudgment", {s: "Οι ασθενείς που ο γιατρός κούραρε τους ευχαρίστησε πολύ θερμά."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "Οι μουσικοί που ο μαέστρος διευθύνει τους ακούει προσεκτικά."}],
     ["T3-filler", "AcceptabilityJudgment", {s: "Οι κολυμβητές που ο προπονητής ανέλαβε πάντα τους ακούει."}],
-    ["T3-filler", "AcceptabilityJudgment", {s: "Οι γραμματείς που ο διεθυντής προσέλαβε τους απογοήτευσε."}],
-
-
-
-
+    ["T3-filler", "AcceptabilityJudgment", {s: "Οι γραμματείς που ο διευθυντής προσέλαβε τους απογοήτευσε."}],
 ];
