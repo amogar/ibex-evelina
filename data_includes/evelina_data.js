@@ -16,7 +16,7 @@ var defaults = [
         transfer: 500,
         normalMessage: "",
         ignoreFailure: true,
-        hideProgressBar: false
+        hideProgressBar: true
     },
     "DashedSentence", {
         mode: "self-paced reading"
@@ -28,20 +28,20 @@ var defaults = [
         instructions: null,
         leftComment: "(Bad)", rightComment: "(Good)",
         timeout: null,
-        hideProgressBar: false
+        hideProgressBar: true
     },
     "Question", {
         randomOrder: false,
         as: [['f', 'el'], ['j', 'la']],
         presentHorizontally: true,
         timeout: 3000,
-        hideProgressBar: false
+        hideProgressBar: true
     },
     "Message", {
-        hideProgressBar: false
+        hideProgressBar: true
     },
     "Form", {
-        hideProgressBar: false,
+        hideProgressBar: true,
         continueOnReturn: true,
         saveReactionTime: false
     }
