@@ -16,7 +16,7 @@ var defaults = [
         transfer: 500,
         normalMessage: "",
         ignoreFailure: true,
-        hideProgressBar: true
+        hideProgressBar: false
     },
     "DashedSentence", {
         mode: "self-paced reading"
@@ -28,20 +28,20 @@ var defaults = [
         instructions: null,
         leftComment: "(Bad)", rightComment: "(Good)",
         timeout: null,
-        hideProgressBar: true
+        hideProgressBar: false
     },
     "Question", {
         randomOrder: false,
         as: [['f', 'el'], ['j', 'la']],
         presentHorizontally: true,
         timeout: 3000,
-        hideProgressBar: true
+        hideProgressBar: false
     },
     "Message", {
-        hideProgressBar: true
+        hideProgressBar: false
     },
     "Form", {
-        hideProgressBar: true,
+        hideProgressBar: false,
         continueOnReturn: true,
         saveReactionTime: false
     }
@@ -332,7 +332,7 @@ var items = [
     ["T4-filler", "AcceptabilityJudgment", {s: "Εστράφην διακοπές τες που προχτές."}],
     ["T4-filler", "AcceptabilityJudgment", {s: "Στο ποτζοιμήθην τραπέζι του γάμου."}],
     ["T4-filler", "AcceptabilityJudgment", {s: "Εβαώθηκεν μες κάμαρήν την της."}],
-    ["T4-filler", "AcceptabilityJudgment", {s: "Εχάρηκεν πολλά τούντα νέα με."}]
+    ["T4-filler", "AcceptabilityJudgment", {s: "Εχάρηκεν πολλά τούντα νέα με."}],
     
     //task 5
     
@@ -430,6 +430,5 @@ var items = [
     ["T6-filler", "AcceptabilityJudgment", {s: "Οι άρρωστοι που ο γιατρός έγιανε ευχαρίστησεν τους πολλά θερμά."}],
     ["T6-filler", "AcceptabilityJudgment", {s: "Οι μουσικοί που ο Νικόλας διευθύνει ακούει τους προσεκτικά."}],
     ["T6-filler", "AcceptabilityJudgment", {s: "Οι φοιτήτριες που ο καθηγητής ανέλαβε πάντα προσέχει τες."}],
-    ["T6-filler", "AcceptabilityJudgment", {s: "Οι κοπέλλες που η Χρύσω έπιασε στη δουλειά απογοήτευσεν τες."}],
+    ["T6-filler", "AcceptabilityJudgment", {s: "Οι κοπέλλες που η Χρύσω έπιασε στη δουλειά απογοήτευσεν τες."}]
 ];
-Η Μαρία έφαεν το χαλλούμι.
